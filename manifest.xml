@@ -78,8 +78,8 @@
       <bt:ShortStrings>
         <bt:String id="TabToolKit.TabLabel" DefaultValue="ToolKit"/>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Data"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Import csv/excel"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
