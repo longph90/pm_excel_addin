@@ -34,13 +34,15 @@
           <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="TabToolKit">
-              <Group id="CommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+              <Group id="TasksGroup">
+                <Label resid="TasksGroup.Label"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
+
+                <!--import file-->
                 <Control xsi:type="Button" id="TaskpaneButton">
                   <Label resid="TaskpaneButton.Label"/>
                   <Supertip>
@@ -48,19 +50,116 @@
                     <Description resid="TaskpaneButton.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
+                    <bt:Image size="16" resid="Icon.data-transfer"/>
+                    <bt:Image size="32" resid="Icon.data-transfer"/>
+                    <bt:Image size="80" resid="Icon.data-transfer"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <TaskpaneId>TaskpaneButton</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
+
+                <!--get tasks by account-->
+                <Control xsi:type="Button" id="Tasks">
+                  <Label resid="Tasks.Label"/>
+                  <Supertip>
+                    <Title resid="Tasks.Label"/>
+                    <Description resid="Tasks.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.to-do-list"/>
+                    <bt:Image size="32" resid="Icon.to-do-list"/>
+                    <bt:Image size="80" resid="Icon.to-do-list"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Tasks</TaskpaneId>
+                    <SourceLocation resid="Tasks.Url"/>
+                  </Action>
+                </Control>
+
+                <!--Add New Task-->
+                <Control xsi:type="Button" id="NewTask">
+                  <Label resid="NewTask.Label"/>
+                  <Supertip>
+                    <Title resid="NewTask.Label"/>
+                    <Description resid="NewTask.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.add-task"/>
+                    <bt:Image size="32" resid="Icon.add-task"/>
+                    <bt:Image size="80" resid="Icon.add-task"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>NewTask</TaskpaneId>
+                    <SourceLocation resid="NewTask.Url"/>
+                  </Action>
+                </Control>
+
               </Group>
+
+              <!--Group Resource-->
+              <Group id="ResourceGroup">
+                <Label resid="ResourceGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.add"/>
+                  <bt:Image size="32" resid="Icon.add"/>
+                  <bt:Image size="80" resid="Icon.add"/>
+                </Icon>
+
+                <!--Add Resource-->
+                <Control xsi:type="Button" id="AddResource">
+                  <Label resid="AddResource.Label"/>
+                  <Supertip>
+                    <Title resid="AddResource.Label"/>
+                    <Description resid="AddResource.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.add"/>
+                    <bt:Image size="32" resid="Icon.add"/>
+                    <bt:Image size="80" resid="Icon.add"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>AddResource</TaskpaneId>
+                    <SourceLocation resid="AddResource.Url"/>
+                  </Action>
+                </Control>
+
+              </Group>
+
+              <!--Group Report-->
+              <Group id="ReportGroup">
+                <Label resid="ReportGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.report"/>
+                  <bt:Image size="32" resid="Icon.report"/>
+                  <bt:Image size="80" resid="Icon.report"/>
+                </Icon>
+
+                <!--Report-->
+                <Control xsi:type="Button" id="CreateReport">
+                  <Label resid="CreateReport.Label"/>
+                  <Supertip>
+                    <Title resid="CreateReport.Label"/>
+                    <Description resid="CreateReport.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.report"/>
+                    <bt:Image size="32" resid="Icon.report"/>
+                    <bt:Image size="80" resid="Icon.report"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>CreateReport</TaskpaneId>
+                    <SourceLocation resid="CreateReport.Url"/>
+                  </Action>
+                </Control>
+
+              </Group>
+
               <Label resid="TabToolKit.TabLabel" />
             </CustomTab>
           </ExtensionPoint>
+
         </DesktopFormFactor>
       </Host>
     </Hosts>
@@ -69,21 +168,46 @@
         <bt:Image id="Icon.16x16" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/icon-16.png"/>
         <bt:Image id="Icon.32x32" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/icon-32.png"/>
         <bt:Image id="Icon.80x80" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/icon-80.png"/>
+        <bt:Image id="Icon.data-transfer" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/data-transfer.png"/>
+        <bt:Image id="Icon.to-do-list" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/to-do-list.png"/>
+        <bt:Image id="Icon.add" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/add.png"/>
+        <bt:Image id="Icon.add-task" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/add-task.png"/>
+        <bt:Image id="Icon.report" DefaultValue="https://longph90.github.io/pm_excel_addin/assets/report.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Commands.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/taskpane.html"/>
+        <bt:Url id="Tasks.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/taskbymember.html"/>
+        <bt:Url id="NewTask.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/addtask.html"/>
+
+        <bt:Url id="AddResource.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/addresource.html"/>
+
+        <bt:Url id="CreateReport.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/report.html"/>
+
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="TabToolKit.TabLabel" DefaultValue="ToolKit"/>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Data"/>
+        <bt:String id="TasksGroup.Label" DefaultValue="Tasks"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Import csv/excel"/>
+        <bt:String id="Tasks.Label" DefaultValue="Tasks Information"/>
+        <bt:String id="NewTask.Label" DefaultValue="Add New Task"/>
+
+        <bt:String id="ResourceGroup.Label" DefaultValue="Resources"/>
+        <bt:String id="AddResource.Label" DefaultValue="Add New Resource"/>
+
+        <bt:String id="ReportGroup.Label" DefaultValue="Reports"/>
+        <bt:String id="CreateReport.Label" DefaultValue="Create Report"/>
+
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="Tasks.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="NewTask.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="AddResource.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="CreateReport.Tooltip" DefaultValue="Click to Show a Taskpane"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
