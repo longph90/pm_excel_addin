@@ -13,7 +13,8 @@
   <HighResolutionIconUrl DefaultValue="https://longph90.github.io/pm_excel_addin/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://longph90.github.io/pm_excel_addin</AppDomain>
+    <AppDomain>https://localhost:3000</AppDomain>    <!-- Thêm dòng này -->
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -192,13 +193,13 @@
         <bt:String id="TasksGroup.Label" DefaultValue="Tasks"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Import csv/excel"/>
         <bt:String id="Tasks.Label" DefaultValue="Tasks Information"/>
-        <bt:String id="NewTask.Label" DefaultValue="Add New Task"/>
+        <bt:String id="NewTask.Label" DefaultValue="Update Task"/>
 
         <bt:String id="ResourceGroup.Label" DefaultValue="Resources"/>
-        <bt:String id="AddResource.Label" DefaultValue="Add New Resource"/>
+        <bt:String id="AddResource.Label" DefaultValue="Update Resource"/>
 
         <bt:String id="ReportGroup.Label" DefaultValue="Reports"/>
-        <bt:String id="CreateReport.Label" DefaultValue="Create Report"/>
+        <bt:String id="CreateReport.Label" DefaultValue="Report"/>
 
       </bt:ShortStrings>
       <bt:LongStrings>
