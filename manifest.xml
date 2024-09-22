@@ -80,7 +80,7 @@
                 </Control>
 
                 <!--Add New Task-->
-                <Control xsi:type="Button" id="NewTask">
+                <!-- <Control xsi:type="Button" id="NewTask">
                   <Label resid="NewTask.Label"/>
                   <Supertip>
                     <Title resid="NewTask.Label"/>
@@ -95,7 +95,7 @@
                     <TaskpaneId>NewTask</TaskpaneId>
                     <SourceLocation resid="NewTask.Url"/>
                   </Action>
-                </Control>
+                </Control> -->
 
               </Group>
 
