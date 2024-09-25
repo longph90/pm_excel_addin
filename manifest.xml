@@ -79,12 +79,12 @@
                   </Action>
                 </Control>
 
-                <!--Add New Task-->
-                <!-- <Control xsi:type="Button" id="NewTask">
-                  <Label resid="NewTask.Label"/>
+                <!--Q&A Information-->
+                <Control xsi:type="Button" id="QAInformation">
+                  <Label resid="QAInformation.Label"/>
                   <Supertip>
-                    <Title resid="NewTask.Label"/>
-                    <Description resid="NewTask.Tooltip"/>
+                    <Title resid="QAInformation.Label"/>
+                    <Description resid="QAInformation.Tooltip"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Icon.add-task"/>
@@ -92,10 +92,10 @@
                     <bt:Image size="80" resid="Icon.add-task"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>NewTask</TaskpaneId>
-                    <SourceLocation resid="NewTask.Url"/>
+                    <TaskpaneId>QAInformation</TaskpaneId>
+                    <SourceLocation resid="QAInformation.Url"/>
                   </Action>
-                </Control> -->
+                </Control>
 
               </Group>
 
@@ -180,7 +180,7 @@
         <bt:Url id="Commands.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/taskpane.html"/>
         <bt:Url id="Tasks.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/taskbymember.html"/>
-        <bt:Url id="NewTask.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/addtask.html"/>
+        <bt:Url id="QAInformation.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/qa_information.html"/>
 
         <bt:Url id="AddResource.Url" DefaultValue="https://longph90.github.io/pm_excel_addin/addresource.html"/>
 
@@ -193,7 +193,7 @@
         <bt:String id="TasksGroup.Label" DefaultValue="Tasks"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Import csv/excel"/>
         <bt:String id="Tasks.Label" DefaultValue="Tasks Information"/>
-        <bt:String id="NewTask.Label" DefaultValue="Update Task"/>
+        <bt:String id="QAInformation.Label" DefaultValue="QA Informations"/>
 
         <bt:String id="ResourceGroup.Label" DefaultValue="Resources"/>
         <bt:String id="AddResource.Label" DefaultValue="Update Resource"/>
@@ -206,7 +206,7 @@
         <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
         <bt:String id="Tasks.Tooltip" DefaultValue="Click to Show a Taskpane"/>
-        <bt:String id="NewTask.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="QAInformation.Tooltip" DefaultValue="Click to Show a Taskpane"/>
         <bt:String id="AddResource.Tooltip" DefaultValue="Click to Show a Taskpane"/>
         <bt:String id="CreateReport.Tooltip" DefaultValue="Click to Show a Taskpane"/>
       </bt:LongStrings>
