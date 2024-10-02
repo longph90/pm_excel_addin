@@ -1,0 +1,82 @@
+body {
+    font-family: Meiryo UI, sans-serif;
+    font-size: 11px;
+    margin-top: 10px;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #f1f1f1;
+    font-size: 12px;
+}
+
+main {
+    margin-top: 5px;
+    flex: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.accordion-body {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    /* Cho phép cuộn nếu nội dung vượt quá chiều cao */
+    max-height: 400px;
+    /* Chiều cao tối đa có thể điều chỉnh */
+}
+
+.accordion-item {
+    width: 100%;
+    /* Đảm bảo item chiếm toàn bộ chiều rộng */
+}
+
+.modal {
+    z-index: 1050;
+    /* Đảm bảo modal hiển thị trên các phần tử khác */
+}
+
+.ms-1 {
+    margin-top: 1cm !important;
+}
+
+.input-group-text {
+    width: 150px;
+    /* You can adjust the width as desired */
+}
+
+.container {
+    margin-top: 20px;
+    margin: 5px;
+    max-width: 100%;
+}
+
+.accordion-button {
+    background-color: antiquewhite
+}
+
+#notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    width: 100%;
+    max-width: 600px;
+    display: none;
+    font-size: large;
+}
+
+.modal-dialog {
+    max-width: 100%;
+    margin: 15px;
+}
