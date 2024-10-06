@@ -1,2 +1,0 @@
-!function(){"use strict";Object.freeze({OPEN:"OPEN",IN_PROGRESS:"IN_PROGRESS",WAITING_REVIEW:"WAITING_REVIEW",WAITING_RELEASE:"WAITING_RELEASE",RELEASED:"RELEASED"})}();
-//# sourceMappingURL=common.js.map
